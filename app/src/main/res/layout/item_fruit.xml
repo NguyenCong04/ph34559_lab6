@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#EFF1E3"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:layout_marginBottom="20dp"
+    android:layout_margin="16dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        >
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/baseline_broken_image_24"
+            android:adjustViewBounds="true"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name: "
+                    android:textStyle="bold"
+                    android:gravity="start"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty A"
+                    android:gravity="start"
+                    android:fontFamily="serif"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Price: "
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/tv_priceQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Công ty A"
+                    android:fontFamily="serif"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Quantity: "
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/tv_Quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:text="Công ty A"
+                    android:fontFamily="serif"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dis: "
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/tv_distributor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty A"
+                    android:gravity="start"
+                    android:fontFamily="serif"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Desc: "
+                    android:gravity="start"
+                    android:textStyle="bold"
+                    android:fontFamily="serif"
+                    />
+                <TextView
+                    android:id="@+id/tv_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Công ty A"
+                    android:gravity="start"
+                    android:fontFamily="serif"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_icon"
+            android:layout_marginEnd="20dp"
+            />
+        <ImageButton
+
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/delete_icon"
+            />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

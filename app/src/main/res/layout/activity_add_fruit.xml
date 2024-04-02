@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.RegisterActivity"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00bcd2"
+            android:padding="17dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/baseline_arrow_back_ios_24"
+                app:tint="@color/white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:gravity="center"
+                android:text="Add Fruit"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/baseline_broken_image_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="serif"
+                android:text="Name"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="serif"
+                android:hint="Enter your name"
+                android:padding="16dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="3dp"
+                    android:fontFamily="serif"
+                    android:text="Quantity"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/ed_quantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="serif"
+                    android:hint="Enter your quantity"
+                    android:padding="16dp"
+                    android:textSize="15sp" />
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               >
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="start"
+                   android:layout_marginStart="10dp"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="3dp"
+                   android:fontFamily="serif"
+                   android:text="Price"
+                   android:textColor="@color/black" />
+               <EditText
+                   android:id="@+id/ed_price"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginEnd="10dp"
+                   android:background="@drawable/custom_edittext"
+                   android:fontFamily="serif"
+                   android:hint="Enter your price"
+                   android:padding="16dp"
+                   android:textSize="15sp" />
+           </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="serif"
+                android:text="Status"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/ed_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="serif"
+                android:hint="Enter your status"
+                android:padding="16dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="serif"
+            android:text="Distributor"
+            android:textColor="@color/black" />
+
+        <Spinner
+            android:id="@+id/sp_distributor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:padding="16dp"
+            android:background="@drawable/custom_edittext" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="serif"
+                android:text="Descriptions"
+                android:textColor="@color/black" />
+            <EditText
+                android:id="@+id/ed_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:background="@drawable/custom_edittext"
+                android:fontFamily="serif"
+                android:hint="Enter your descriptions"
+                android:padding="16dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_btn"
+            android:fontFamily="serif"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</ScrollView>
